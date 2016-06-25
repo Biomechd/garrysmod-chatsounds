@@ -1,5 +1,4 @@
 c.StartList("beauty_bomber")
-L["7thelementfadeout"]={{path="chatsounds/autoadd/beauty_bomber/7thelementfadeout.ogg",length=24.906938775510206}}
 L["a bunch of baby ducks send them to the moon"]={{path="chatsounds/autoadd/beauty_bomber/a bunch of baby ducks send them to the moon.ogg",length=2.6945124716553286}}
 L["ack ook ich ach bluah"]={{path="chatsounds/autoadd/beauty_bomber/ack ook ich ach bluah.ogg",length=2}}
 L["aha wingardium leviosaaa"]={{path="chatsounds/autoadd/beauty_bomber/aha wingardium leviosaaa/1.ogg",length=3},{path="chatsounds/autoadd/beauty_bomber/aha wingardium leviosaaa/2.ogg",length=3},{path="chatsounds/autoadd/beauty_bomber/aha wingardium leviosaaa/3.ogg",length=2.6200000000000001},{path="chatsounds/autoadd/beauty_bomber/aha wingardium leviosaaa/4.ogg",length=1.9129931972789116}}
@@ -11,13 +10,14 @@ L["bayonettagameover"]={{path="chatsounds/autoadd/beauty_bomber/bayonettagameove
 L["bayonettascarboroughfairequipped"]={{path="chatsounds/autoadd/beauty_bomber/bayonettascarboroughfairequipped.ogg",length=25.102585034013604}}
 L["beauty bomber"]={{path="chatsounds/autoadd/beauty_bomber/beauty bomber.ogg",length=0.94040816326530607}}
 L["but grandma shouldnt talk that way"]={{path="chatsounds/autoadd/beauty_bomber/but grandma shouldnt talk that way.ogg",length=1.84578231292517}}
-L["chandra brambra chandra chandra bendram"]={{path="chatsounds/autoadd/beauty_bomber/chandra brambra chandra chandra bendram/1.ogg",length=7.4000000000000004},{path="chatsounds/autoadd/beauty_bomber/chandra brambra chandra chandra bendram/2.ogg",length=7.2000000000000002}}
 L["dbgsax"]={{path="chatsounds/autoadd/beauty_bomber/dbgsax.ogg",length=26}}
 L["dontloseyourway"]={{path="chatsounds/autoadd/beauty_bomber/dontloseyourway.ogg",length=35.899999999999999}}
 L["eeeeeeeeeuuuuuuuuuuggggggggghhhhhhhhhhh"]={{path="chatsounds/autoadd/beauty_bomber/eeeeeeeeeuuuuuuuuuuggggggggghhhhhhhhhhh.ogg",length=70.95269841269841}}
 L["eeeuuuggghhh"]={{path="chatsounds/autoadd/beauty_bomber/eeeuuuggghhh.ogg",length=6.1204761904761904}}
+L["fr e sh a voca do"]={{path="chatsounds/autoadd/beauty_bomber/fr e sh a voca do.ogg",length=1.2948526077097506}}
 L["gordon you must get out of here runrunrunrunrunrunrunrun"]={{path="chatsounds/autoadd/beauty_bomber/gordon you must get out of here runrunrunrunrunrunrunrun.ogg",length=5.2999999999999998}}
 L["gunter quack"]={{path="chatsounds/autoadd/beauty_bomber/gunter quack.ogg",length=0.30725623582766443}}
+L["how many layers of irony are you on"]={{path="chatsounds/autoadd/beauty_bomber/how many layers of irony are you on.ogg",length=2.3748299319727892}}
 L["ill do this with my hands blargharghargh"]={{path="chatsounds/autoadd/beauty_bomber/ill do this with my hands blargharghargh.ogg",length=4.6404308390022679}}
 L["is this the krusty krab"]={{path="chatsounds/autoadd/beauty_bomber/is this the krusty krab/1.ogg",length=1.3570068027210884},{path="chatsounds/autoadd/beauty_bomber/is this the krusty krab/2.ogg",length=1.1839909297052154},{path="chatsounds/autoadd/beauty_bomber/is this the krusty krab/3.ogg",length=1.3319727891156463}}
 L["its an inanimate fucking object"]={{path="chatsounds/autoadd/beauty_bomber/its an inanimate fucking object.ogg",length=2.0823129251700681}}
@@ -28,6 +28,8 @@ L["kaching"]={{path="chatsounds/autoadd/beauty_bomber/kaching.ogg",length=1.5866
 L["keel over and die"]={{path="chatsounds/autoadd/beauty_bomber/keel over and die.ogg",length=3.0563265306122447}}
 L["leedle leedle leedle lee"]={{path="chatsounds/autoadd/beauty_bomber/leedle leedle leedle lee.ogg",length=1.75}}
 L["letsboomboom"]={{path="chatsounds/autoadd/beauty_bomber/letsboomboom.ogg",length=2.3250113378684807}}
+L["like maybe five or six right now my dude"]={{path="chatsounds/autoadd/beauty_bomber/like maybe five or six right now my dude.ogg",length=2.4985941043083901}}
+L["loud succ"]={{path="chatsounds/autoadd/beauty_bomber/loud succ.ogg",length=2.475374149659864}}
 L["meme school"]={{path="chatsounds/autoadd/beauty_bomber/meme school.ogg",length=1.0669841269841269}}
 L["michaelow"]={{path="chatsounds/autoadd/beauty_bomber/michaelow.ogg",length=1.1839909297052154}}
 L["michaelshutup"]={{path="chatsounds/autoadd/beauty_bomber/michaelshutup.ogg",length=0.77600907029478461}}
@@ -65,12 +67,15 @@ L["that that you let a penis penetrate your friendship penis"]={{path="chatsound
 L["thats enough"]={{path="chatsounds/autoadd/beauty_bomber/thats enough.ogg",length=0.73099773242630384}}
 L["theatreland"]={{path="chatsounds/autoadd/beauty_bomber/theatreland.ogg",length=27.813242630385488}}
 L["wake me up inside"]={{path="chatsounds/autoadd/beauty_bomber/wake me up inside.ogg",length=21.981995464852609}}
+L["watch this"]={{path="chatsounds/autoadd/beauty_bomber/watch this.ogg",length=1.1139229024943311}}
 L["wha you cant do this to me"]={{path="chatsounds/autoadd/beauty_bomber/wha you cant do this to me.ogg",length=1.8403854875283447}}
 L["who put you on the planet"]={{path="chatsounds/autoadd/beauty_bomber/who put you on the planet/1.ogg",length=2.4715873015873018},{path="chatsounds/autoadd/beauty_bomber/who put you on the planet/2.ogg",length=2.8089569160997732}}
 L["wilsooooon"]={{path="chatsounds/autoadd/beauty_bomber/wilsooooon/1.ogg",length=4.2000000000000002},{path="chatsounds/autoadd/beauty_bomber/wilsooooon/2.ogg",length=1.5248526077097506}}
 L["woodyscream"]={{path="chatsounds/autoadd/beauty_bomber/woodyscream.ogg",length=0.47854875283446713}}
 L["wotwtripod"]={{path="chatsounds/autoadd/beauty_bomber/wotwtripod.ogg",length=9.06562358276644}}
+L["wowowowowowowowow"]={{path="chatsounds/autoadd/beauty_bomber/wowowowowowowowow.ogg",length=10.932585034013606}}
 L["yeeaaahhhh"]={{path="chatsounds/autoadd/beauty_bomber/yeeaaahhhh.ogg",length=0.87074829931972786}}
+L["you are like a baby"]={{path="chatsounds/autoadd/beauty_bomber/you are like a baby.ogg",length=1.4929705215419502}}
 L["you know how much i sacrificed"]={{path="chatsounds/autoadd/beauty_bomber/you know how much i sacrificed.ogg",length=2.0765986394557823}}
 L["youre an inanimate fucking object"]={{path="chatsounds/autoadd/beauty_bomber/youre an inanimate fucking object.ogg",length=2.1220181405895691}}
 c.EndList()
