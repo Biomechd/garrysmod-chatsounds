@@ -1,7 +1,7 @@
 c.StartList("misc")
 L["adrien brody"]={{path="chatsounds/autoadd/misc/adrien brody/adrien brody1.ogg",length=1.2364172335600907},{path="chatsounds/autoadd/misc/adrien brody/adrien brody2.ogg",length=1.4273015873015873}}
-L["ahahaahhh"]={{path="chatsounds/autoadd/misc/ahahaahhh.ogg",length=7.3138095238095238}}
 L["all"]={{path="chatsounds/autoadd/misc/all.ogg",length=0.19721088435374148}}
+L["alright it seems like someone is about to get banned"]={{path="chatsounds/autoadd/misc/alright it seems like someone is about to get banned.ogg",length=5.00390022675737}}
 L["amnesiaevent"]={{path="chatsounds/autoadd/misc/amnesiaevent.ogg",length=3.8250793650793651}}
 L["aol input"]={{path="chatsounds/autoadd/misc/aol input.ogg",length=0.82539682539682535}}
 L["aol mail"]={{path="chatsounds/autoadd/misc/aol mail.ogg",length=0.87659863945578231}}
@@ -9,7 +9,6 @@ L["aol output"]={{path="chatsounds/autoadd/misc/aol output.ogg",length=0.9116780
 L["bbaann"]={{path="chatsounds/autoadd/misc/bbaann.ogg",length=5.1857142857142859}}
 L["bill nye"]={{path="chatsounds/autoadd/misc/bill nye.ogg",length=5.5901814058956916}}
 L["blend"]={{path="chatsounds/autoadd/misc/blend.ogg",length=0.5926530612244898}}
-L["blulululuruah ah ah"]={{path="chatsounds/autoadd/misc/blulululuruah ah ah.ogg",length=1.8500000000000001}}
 L["boom"]={{path="chatsounds/autoadd/misc/boom.ogg",length=7.2446485260770972}}
 L["brodyquest"]={{path="chatsounds/autoadd/misc/brodyquest.ogg",length=21.341927437641722}}
 L["broteamsubscriberalert"]={{path="chatsounds/autoadd/misc/broteamsubscriberalert.ogg",length=12.286281179138323}}
@@ -30,6 +29,9 @@ L["die waffen legt an"]={{path="chatsounds/autoadd/misc/die waffen legt an.ogg",
 L["doom1"]={{path="chatsounds/autoadd/misc/doom1.ogg",length=16.377777777777776}}
 L["doom2"]={{path="chatsounds/autoadd/misc/doom2.ogg",length=18.695102040816327}}
 L["ea sucks big cock"]={{path="chatsounds/autoadd/misc/die waffen legt an.ogg",length=3.3697959183673469}}
+L["ebola"]={{path="chatsounds/autoadd/misc/ebola/ebola 1.ogg",length=0.40925170068027211},{path="chatsounds/autoadd/misc/ebola/ebola 2.ogg",length=0.70836734693877546},{path="chatsounds/autoadd/misc/ebola/ebola 3.ogg",length=0.61820861678004535},{path="chatsounds/autoadd/misc/ebola/ebola 4.ogg",length=1.0363718820861678}}
+L["ebooooola"]={{path="chatsounds/autoadd/misc/ebooooola.ogg",length=1.5689795918367346}}
+L["eeeyyy ebola"]={{path="chatsounds/autoadd/misc/eeeyyy ebola.ogg",length=1.3968707482993197}}
 L["elmos world"]={{path="chatsounds/autoadd/misc/elmos world.ogg",length=30.864739229024945}}
 L["facebook"]={{path="chatsounds/autoadd/misc/facebook.ogg",length=0.95201814058956913}}
 L["fine"]={{path="chatsounds/autoadd/misc/fine.ogg",length=0.66208616780045348}}
@@ -82,6 +84,7 @@ L["question"]={{path="chatsounds/autoadd/misc/question.ogg",length=0.54403628117
 L["red"]={{path="chatsounds/autoadd/misc/red.ogg",length=0.21832199546485262}}
 L["rocketlawnchair"]={{path="chatsounds/autoadd/misc/rocketlawnchair.ogg",length=1.933061224489796}}
 L["rockthecasbah"]={{path="chatsounds/autoadd/misc/rockthecasbah.ogg",length=7.4187755102040818}}
+L["roundabout intro"]={{path="chatsounds/autoadd/misc/roundabout intro.ogg",length=10.77047619047619}}
 L["san andreas"]={{path="chatsounds/autoadd/misc/san andreas.ogg",length=77.18426303854875}}
 L["sega"]={{path="chatsounds/autoadd/misc/sega.ogg",length=1.7719274376417233}}
 L["sexrobot"]={{path="chatsounds/autoadd/misc/sexrobot.ogg",length=8.5198412698412707}}
@@ -111,6 +114,7 @@ L["winamp winamp"]={{path="chatsounds/autoadd/misc/winamp winamp.ogg",length=1.8
 L["wlm"]={{path="chatsounds/autoadd/misc/wlm.ogg",length=0.64557823129251701}}
 L["wowwow"]={{path="chatsounds/autoadd/misc/wowwow.ogg",length=1.7647165532879818}}
 L["wtf"]={{path="chatsounds/autoadd/misc/wtf/wtf 2.ogg",length=1.1052154195011339},{path="chatsounds/autoadd/misc/wtf/wtf 3.ogg",length=0.99011337868480731},{path="chatsounds/autoadd/misc/wtf/wtf.ogg",length=0.92882086167800448}}
+L["yes ebooooola"]={{path="chatsounds/autoadd/misc/yes ebooooola.ogg",length=2.1201814058956918}}
 L["yes yes"]={{path="chatsounds/autoadd/misc/yes yes.ogg",length=4.7855102040816329}}
 L["you belong in a garbage can"]={{path="chatsounds/autoadd/misc/you belong in a garbage can.ogg",length=2.1436961451247165}}
 L["you havent seen the last of"]={{path="chatsounds/autoadd/misc/you havent seen the last of.ogg",length=1.5292290249433107}}

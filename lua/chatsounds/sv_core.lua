@@ -24,7 +24,8 @@ for _, list in pairs(files) do
 end
 
 
-chatsounds = {} local c = chatsounds
+chatsounds = {}
+local chatsounds = chatsounds
 -- Initial Seed
 chatsounds.Seed = os.time()
 
@@ -48,11 +49,11 @@ function chatsounds.GenerateNewSeed()
 		Matt: More stable seed,
 		last one was almost predictable without calculating
 	]]
-	c.Seed = (c.Seed * CurTime()) + 1
-  c.Seed = (c.Seed + lshift(c.Seed , 3)) % 1024
-	c.Seed = math.ceil(c.Seed)
+	chatsounds.Seed = (chatsounds.Seed * CurTime()) + 1
+  chatsounds.Seed = (chatsounds.Seed + lshift(chatsounds.Seed , 3)) % 1024
+	chatsounds.Seed = math.ceil(chatsounds.Seed)
 
-	-- print(c.Seed)
+	-- print(chatsounds.Seed)
 end
 
 local plys = {}
@@ -60,89 +61,72 @@ function chatsounds.GetRecipientFilter(pos)
 	local i=1
 	
 	for key, ply in next,player.GetAll() do
-		
 		local enabled = ply:GetInfoNum("chatsounds_enabled",0)
 		if enabled and enabled >= 1 then
-		
 			if not pos or (pos and ply:VisibleVec(pos)) then
 				plys[i] = ply
 				i = i + 1
 			end
-			
 		end
-		
 	end
 	
 	while i<257 do
-	
 		if plys[i]==nil then break end
 		plys[i]=nil
 		i=i+1
-		
 	end
 
 	return plys
 end
 
-function chatsounds.IsLuaCommand(text)
-	-- Matt: Maybe use LuaDev module to see if its one of the commands?
-	text = text:TrimLeft()
-
-	if ( text:sub(1, 2) == "!l" or
-		text:sub(1, 3) == "!lc" or
-		text:sub(1, 3) == "!cl" or
-		text:sub(1, 3) == "!lc" or
-		text:sub(1, 3) == "!ls" or
-		text:sub(1, 3) == "!lm" or
-		text:sub(1, 4) == "!cmd" or
-		text:sub(1, 6) == "!print" or
-		text:sub(1, 6) == "!printm" or
-		text:sub(1, 6) == "!printc" or
-		text:sub(1, 6) == "!table" )
-	then
-		return true
-	end
-
-	return false
-end
-
 local offground=Vector(0,0,16)
 function chatsounds.Say(ply, text)
-	if hook.Call("PreChatSoundsSay", nil, ply, text) == false then return end
 	if not IsValid(ply) then return end
 	if text:Trim() == "" then return end
-	if chatsounds.IsLuaCommand(text) then return end
+	
+	if hook.Call("PreChatSoundsSay", nil, ply, text) == false then return end
 
-	local seed = c.Seed - 127
-	--if( #text > 220 ) then
-		net.Start("chatsounds")
-			net.WriteEntity(ply)
-			-- cut to 32KB
-			net.WriteString( text:sub(1,64000-32-32000) )
-			net.WriteInt(seed,32)
+	local seed = chatsounds.Seed - 127
+	net.Start("chatsounds")
+		net.WriteEntity(ply)
+		-- cut to 32KB
+		net.WriteString( text:sub(1,64000-32-32000) )
+		net.WriteInt(seed,32)
 		local pos = ply:GetPos()
-			  pos:Add(offground)
-		net.Send(chatsounds.GetRecipientFilter(pos))
-	--else
-	--	umsg.Start("chatsounds", chatsounds.GetRecipientFilter())
-	--		umsg.Entity(ply)
-	--		umsg.Char(seed)
-	--		-- todo: make this clientside, maybe store clientside chat history and match them with CRC?
-	--		-- I'll leave it at this for now
-	--		umsg.String(text)
-	--	umsg.End()
-	--end
+		pos:Add(offground)
+	net.Send(chatsounds.GetRecipientFilter(pos))
+	
 	chatsounds.GenerateNewSeed()
 end
 
+cvars.AddChangeCallback("chatsounds_enable_prefix", function(name, old, new)
+	SetGlobalBool("chatsounds_enable_prefix", tobool(new))
+end, "SetGlobalBool")
+local chatsounds_enable_prefix = CreateConVar("chatsounds_enable_prefix", "0", bit.bor(FCVAR_ARCHIVE))
+
 function chatsounds.PlayerSay(ply, text)
-	c.Say(ply, text)
+	if not chatsounds_enable_prefix:GetBool() then 
+		chatsounds.Say(ply, text)
+	return end
+	if string.sub(text, 1, 2) == "##" then
+		text = string.sub(text, 3)
+		chatsounds.Say(ply, text)
+		return text
+	elseif string.sub(text, 1, 1) == "#" then
+		text = string.sub(text, 2)
+		chatsounds.Say(ply, text)
+		return ""
+	end
 end
 hook.Add("PlayerSay", "chatsounds_PlayerSay", chatsounds.PlayerSay)
 
 function chatsounds.SaySound(ply, _, args,line)
 	if not IsValid(ply) then return end
-
+	
+	if line:sub(1,1)=='"' and line:sub(-1,-1)=='"' then
+		line = line:sub(2,-2)	
+	end
+	
 	chatsounds.Say(ply, line)
 
 	chatsounds.GenerateNewSeed()
